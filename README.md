@@ -1,0 +1,2 @@
+# MinutesOfMeetingSummarizer
+文字起こしされた議事録を任意のフレームワークに要約するアプリ
