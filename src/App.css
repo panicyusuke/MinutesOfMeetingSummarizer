@@ -1,0 +1,85 @@
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden; /* 新しく追加して全体をクリップ */
+}
+
+.meeting-table {
+    width: 30%;
+    overflow-y: auto; /* 行数が増えたときのスクロールバーを設置 */
+    margin: 20px; /* 余白の追加 */
+}
+
+.format-content {
+    width: 70%;
+    overflow-y: auto; /* 右側セクションもスクロール可能に */
+    margin: 20px; /* 余白の追加 */
+}
+
+.format-buttons {
+    margin-bottom: 20px; /* ボタンの余白を調整 */
+}
+
+.format-buttons button {
+    margin: 0 10px;
+    padding: 12px 24px; /* ボタンのサイズを大きくする */
+    font-size: 18px; /* フォントサイズを大きくする */
+    cursor: pointer;
+}
+
+.display-area {
+    width: 100%;
+}
+
+.section {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 10px; /* 上下に30px、左右に20pxの余白を追加 */
+    margin-bottom: 10px; /* セクション間の余白を追加 */
+    border-radius: 8px;
+    text-align: left; /* セクション内のテキストを左寄せにする */
+}
+
+.section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left; /* タイトルを左寄せにする */
+}
+
+.section p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
